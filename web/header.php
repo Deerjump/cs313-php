@@ -1,4 +1,4 @@
-<h1>Welcome to my Website!</h1>\
+<h1>Welcome to my Website!</h1>
 <nav>
 	<ul>
 		<li><a class="<?php echo $current == "home" ? "current" : "" ?>" href="home.php">Home</a></li>

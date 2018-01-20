@@ -1,0 +1,30 @@
+body{
+	margin: 0;
+}
+
+header{
+	background-color: #000080;
+}
+
+h1{
+	margin: 0;
+}
+
+ul{
+	padding: 0;
+}
+
+ul li{
+	display: inline-block;
+	color: #FFFFFF;
+}
+
+a{
+	color: inherit;
+	text-decoration: none;
+}
+
+.current{
+	font-weight: bold;
+	color: black;
+}

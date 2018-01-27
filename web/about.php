@@ -10,7 +10,7 @@
 		<?php include "header.php" ?>
 	</header>
 	<div class="bodywrapper">
-		<h1>About Me!</h1>
+		<h1>About Us!</h1>
 	</div>
 </body>
 </html>

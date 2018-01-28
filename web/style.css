@@ -1,6 +1,6 @@
 body{
 	margin: 0px;
-	background-color: #FFFFFF;
+	background-color: #b30000;
 }
 
 header{
@@ -11,6 +11,11 @@ header{
 
 h1{
 	margin: 0;
+	color: white;
+}
+
+h2{
+	color: white;
 }
 
 ul{
@@ -48,7 +53,8 @@ iframe{
 }
 
 .bodywrapper{
-	padding: 20px;
+	padding: 40px;
+	padding-left: 80px;
 }
 
 .assignment{
@@ -59,4 +65,12 @@ iframe{
 
 .center-block{
 	float: none;
+}
+
+.card{
+	width: 18rem;
+}
+
+.cart{
+	width: 75vw;
 }

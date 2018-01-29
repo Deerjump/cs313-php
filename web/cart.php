@@ -29,44 +29,44 @@
 						<?php
 							if($_SESSION['cart']['prod1'] != 0){
 								echo "<li class='list-group-item'><div class='row'>
-								<div class='col-md-4'>Option 1</div>
-								<div class='col-md-4'>$prod1</div>
-								<div class='col-md-4'><a href='cart.php'>Remove From Cart</a></div>
+								<div class='col-sm-4'>Option 1</div>
+								<div class='col-sm-4'>$prod1</div>
+								<div class='col-sm-4'><a href='cart.php'>Remove From Cart</a></div>
 								</div></li>";
 							}
 							if($_SESSION['cart']['prod2'] != 0){
 								echo "<li class='list-group-item'><div class='row'>
-								<div class='col-md-4'>Option 2</div>
-								<div class='col-md-4'>$prod2</div>
-								<div class='col-md-4'><a href='cart.php'>Remove From Cart</a></div>
+								<div class='col-sm-4'>Option 2</div>
+								<div class='col-sm-4'>$prod2</div>
+								<div class='col-sm-4'><a href='cart.php'>Remove From Cart</a></div>
 								</div></li>";
 							}
 							if($_SESSION['cart']['prod3'] != 0){
 								echo "<li class='list-group-item'><div class='row'>
-								<div class='col-md-4'>Option 3</div>
-								<div class='col-md-4'>$prod3</div>
-								<div class='col-md-4'><a href='cart.php'>Remove From Cart</a></div>
+								<div class='col-sm-4'>Option 3</div>
+								<div class='col-sm-4'>$prod3</div>
+								<div class='col-sm-4'><a href='cart.php'>Remove From Cart</a></div>
 								</div></li>";
 							}
 							if($_SESSION['cart']['prod4'] != 0){
 								echo "<li class='list-group-item'><div class='row'>
-								<div class='col-md-4'>Option 4</div>
-								<div class='col-md-4'>$prod4</div>
-								<div class='col-md-4'><a href='cart.php'>Remove From Cart</a></div>
+								<div class='col-sm-4'>Option 4</div>
+								<div class='col-sm-4'>$prod4</div>
+								<div class='col-sm-4'><a href='cart.php'>Remove From Cart</a></div>
 								</div></li>";
 							}
 							if($_SESSION['cart']['prod5'] != 0){
 								echo "<li class='list-group-item'><div class='row'>
-								<div class='col-md-4'>Option 5</div>
-								<div class='col-md-4'>$prod5</div>
-								<div class='col-md-4'><a href='cart.php'>Remove From Cart</a></div>
+								<div class='col-sm-4'>Option 5</div>
+								<div class='col-sm-4'>$prod5</div>
+								<div class='col-sm-4'><a href='cart.php'>Remove From Cart</a></div>
 								</div></li>";
 							}
 							if($_SESSION['cart']['prod6'] != 0){
 								echo "<li class='list-group-item'><div class='row'>
-								<div class='col-md-4'>Option 6</div>
-								<div class='col-md-4'>$prod6</div>
-								<div class='col-md-4'><a href='cart.php'>Remove From Cart</a></div>
+								<div class='col-sm-4'>Option 6</div>
+								<div class='col-sm-4'>$prod6</div>
+								<div class='col-sm-4'><a href='cart.php'>Remove From Cart</a></div>
 								</div></li>";
 							}
 						?>

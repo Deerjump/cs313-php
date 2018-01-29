@@ -33,7 +33,7 @@ $_SESSION['cart']['prod6'] += $_GET['prod6'];
 			</div>	
 			<br>
 			<div class="row">
-				<div class="col-lg-4">
+				<div class="col-md-4">
 					<div class="card">
 					  <div class="card-header">
 					  	<h4 class="card-title">Option 1</h4>
@@ -53,7 +53,7 @@ $_SESSION['cart']['prod6'] += $_GET['prod6'];
 					</div>
 				</div>
 
-				<div class="col-lg-4">
+				<div class="col-md-4">
 					<div class="card">
 					  <div class="card-header">
 					  	<h4 class="card-title">Option 2</h4>
@@ -73,7 +73,7 @@ $_SESSION['cart']['prod6'] += $_GET['prod6'];
 					</div>
 				</div>
 				
-				<div class="col-lg-4">
+				<div class="col-md-4">
 					<div class="card">
 					  <div class="card-header">
 					  	<h4 class="card-title">Option 3</h4>
@@ -96,7 +96,7 @@ $_SESSION['cart']['prod6'] += $_GET['prod6'];
 			<br>
 			<br>
 			<div class="row">
-				<div class="col-lg-4">
+				<div class="col-md-4">
 					<div class="card">
 					  <div class="card-header">
 					  	<h4 class="card-title">Option 4</h4>
@@ -116,7 +116,7 @@ $_SESSION['cart']['prod6'] += $_GET['prod6'];
 					</div>
 				</div>
 
-				<div class="col-lg-4">
+				<div class="col-md-4">
 					<div class="card">
 					  <div class="card-header">
 					  	<h4 class="card-title">Option 5</h4>
@@ -136,7 +136,7 @@ $_SESSION['cart']['prod6'] += $_GET['prod6'];
 					</div>
 				</div>
 
-				<div class="col-lg-4">
+				<div class="col-md-4">
 					<div class="card">
 					  <div class="card-header">
 					  	<h4 class="card-title">Option 6</h4>

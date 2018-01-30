@@ -10,15 +10,25 @@
 		<?php include "header.php" ?>
 	</header>
 	<div class="bodywrapper">
-		<div class="row">
-			<div class="col-lg-6">
-				<h2>Parkour is an amazing sport.</h2>
-		
-				<img src="flip.png">
-			</div>
-			<div class="col-lg-6">
-				<h2>Here is a video of me doing Parkour from 2012!</h2>
-				<iframe class="parkour" src="https://www.youtube-nocookie.com/embed/WFsLMIVZnqE" frameborder= "0";  allow="encrypted-media" allowfullscreen> </iframe>
+		<div class="container-fluid">
+			<div class="row">
+				<div class="col-lg-6">
+					<div class="card" style="width:600px">
+						<div class="card-header">
+							<h2>Parkour is an amazing sport.</h2>
+						</div>
+					</div>
+					<img src="flip.png">
+				</div>
+				<div class="col-xlg-6">
+					<div class="card" style="width:600px">
+						<div class="card-header">
+							<h2>Here is a video I made in 2012!</h2>
+						</div>
+					</div>
+					
+					<iframe class="parkour" src="https://www.youtube-nocookie.com/embed/WFsLMIVZnqE" frameborder= "0";  allow="encrypted-media" allowfullscreen> </iframe>
+				</div>
 			</div>
 		</div>
 	</div>

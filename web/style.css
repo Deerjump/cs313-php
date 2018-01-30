@@ -1,10 +1,11 @@
 body{
 	margin: 0px;
-	background-color: #b30000;
+	background-color: #007bFF;
 }
 
 header{
-	background-color: #007bFF;
+	background-color: #FFFFFF;
+	/*background-color: #007bFF;*/
 	padding: 5px;
 	padding-left: 20px;
 }
@@ -15,7 +16,7 @@ h1{
 }
 
 h2{
-	color: white;
+	color: #007bFF;
 }
 
 ul{
@@ -36,10 +37,6 @@ a:hover{
 	text-decoration: none;
 	font-weight: bold;
 	color: #FF0000;
-}
-
-.headerlist{
-	color: #FFFFFF;
 }
 
 .current{
@@ -73,4 +70,8 @@ iframe{
 
 .cart{
 	width: 75vw;
+}
+
+.header-title{
+	color: #5cb85c;
 }

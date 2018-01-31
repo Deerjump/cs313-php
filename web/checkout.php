@@ -29,17 +29,41 @@
 	<div class="bodywrapper">
 		<div class="container-fluid">
 			<div class="card cart">
-				<div class="card-header">
-					<div class="card-title">Checking Out</div>
+				<form action="send_form_email.php" method="post">
+					<div class="card-header">
+						<div class="card-title">Checking Out</div>
+					</div>
+					<div class="card-text">
+						<ul>
+							<li class='list-group-item'>
+								<div class='row'>
+									<div class="col-md-3">
+										<input type="text" name="first_name" placeholder="First Name">
+									</div>
+
+									<div class="col-md-3">
+										<input type="text" name="last_name" placeholder="Last Name">
+									</div>
+	
+									<div class="col-md-3">
+										<input type="text" name="address1" placeholder="Address First Line">
+									</div>
+
+									<div class="col-md-3">
+										<input type="text" name="address2" placeholder="Address Second Line">
+									</div>
+								</div>
+								<br>
+								<div class="row">
+									<div class="col-md-11 text-right">
+										<a href="" type="submit" class="btn btn-success"> Place Order </a>
+									</div>
+								</div>
+							</li>
+						</ul>
+					</div>
 				</div>
-				<div class="card-text">
-					<ul>
-						<li class='list-group-item'><div class='row'>
-								
-						</li>
-					</ul>
-				</div>
-			</div>
+			</form>
 		</div>
 	</div>
 </body>

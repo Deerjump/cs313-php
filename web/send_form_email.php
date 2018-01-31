@@ -8,4 +8,16 @@
 mail("billman377@gmail.com", "New Order", "This is a test");
 
 ?>
+
+<!DOCTYPE HTML>
+<html>
+	<head>
+		
+	</head>
+	<body>
+		<header>
+			<?php include "header.php" ?>
+		</header>
+	</body>
+</html>
 	

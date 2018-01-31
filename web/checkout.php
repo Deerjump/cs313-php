@@ -29,7 +29,7 @@
 	<div class="bodywrapper">
 		<div class="container-fluid">
 			<div class="card cart">
-				<form action="send_form_email.php" method="post">
+				<form action="submit.php" method="post">
 					<div class="card-header">
 						<div class="card-title">Checking Out</div>
 					</div>
@@ -56,7 +56,7 @@
 								<br>
 								<div class="row">
 									<div class="col-md-11 text-right">
-										<a href="" type="submit" class="btn btn-success"> Place Order </a>
+										<a href="submit.php" class="btn btn-success"> Place Order </a>
 									</div>
 								</div>
 							</li>

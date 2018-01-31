@@ -5,7 +5,7 @@
 
 	$email_message = "This is a test";
 
-mail("billman_377@hotmail.com", "New Order", "This is a test");
+mail("billman377@gmail.com", "New Order", "This is a test");
 
 ?>
 	

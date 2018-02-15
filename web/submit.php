@@ -1,23 +1,12 @@
 <?php
-	$email_to = "billman377@gmail.com";
-	$email_subject = "New Order";
-	$email_from = "deerjump12@gmail.com";
+	session_start();
+	$order = array("first_name" => '', "last_name" => '', "address_1" => '', "address_2" => '');
 
-	$email_message = "This is a test";
 
-mail("billman377@gmail.com", "New Order", "This is a test");
+
+	$_SESSION['order']["first_name"] = $order["first_name"];
+	$_SESSION['order']["last_name"] = $order["last_name"];
+	$_SESSION['order']['address_1'] = $order['address_1'];
+	$_SESSION['order']['address_2'] = $order["address_2"];
 
 ?>
-
-<!DOCTYPE HTML>
-<html>
-	<head>
-		
-	</head>
-	<body>
-		<header>
-			<?php include "header.php" ?>
-		</header>
-	</body>
-</html>
-	

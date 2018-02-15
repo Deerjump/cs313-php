@@ -1,7 +1,7 @@
 <?php
 
 session_start();
-$bag = array("prod1" => '0', "prod2" => '0', "prod3" => '0', "prod4" => '0', "prod5" => '0', "prod6" => '0');
+
 
 $_SESSION['cart']['prod1'] += $_GET['prod1'];
 $_SESSION['cart']['prod2'] += $_GET['prod2'];

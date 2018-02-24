@@ -102,7 +102,7 @@ $_SESSION['cart']['prod6'] += $_GET['prod6'];
 					  	<h4 class="card-title">Option 4</h4>
 					  </div>
 					  <div class="card-body">
-					    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+					    <p class="card-text">Mid to high tier PC for productivity and gaming</p>
 					    <ul class="list-group list-group-flush">
     						<li class="list-group-item">Intel i7-7700 4 Core</li>
 						    <li class="list-group-item">Nvidia GTX 1070 </li>
@@ -122,7 +122,7 @@ $_SESSION['cart']['prod6'] += $_GET['prod6'];
 					  	<h4 class="card-title">Option 5</h4>
 					  </div>
 					  <div class="card-body">
-					    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+					    <p class="card-text">High Tier workstation for heavy workloads and gaming</p>
 					    <ul class="list-group list-group-flush">
     						<li class="list-group-item">Intel i7-8700k 6 Cores</li>
 						    <li class="list-group-item">Nvidia GTX 1080</li>
@@ -142,7 +142,7 @@ $_SESSION['cart']['prod6'] += $_GET['prod6'];
 					  	<h4 class="card-title">Option 6</h4>
 					  </div>
 					  <div class="card-body">
-					    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+					    <p class="card-text">Extremely powerful pc for very high rendering workloads and gaming on the side</p>
 					    <ul class="list-group list-group-flush">
     						<li class="list-group-item">Ryzen Threadripper 1900X</li>
 						    <li class="list-group-item">Nvidia GTX 1080ti</li>

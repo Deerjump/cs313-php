@@ -142,7 +142,7 @@ $_SESSION['cart']['prod6'] += $_GET['prod6'];
 					  	<h4 class="card-title">Option 6</h4>
 					  </div>
 					  <div class="card-body">
-					    <p class="card-text">Extremely powerful pc for very high rendering workloads and gaming on the side</p>
+					    <p class="card-text">Extremely powerful pc for very high rendering workloads</p>
 					    <ul class="list-group list-group-flush">
     						<li class="list-group-item">Ryzen Threadripper 1900X</li>
 						    <li class="list-group-item">Nvidia GTX 1080ti</li>

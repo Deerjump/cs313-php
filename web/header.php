@@ -9,7 +9,7 @@
 		<div class="container-fluid">
 			<div class="row">
 				<div class="col-xlg-1">
-					<li><a class="btn <?php echo $current == "home.php" ? "btn-primary" : "btn-outline-primary" ?>" href="home.php">Home</a></li>
+					<li><a class="btn <?php echo $current == "index.php" ? "btn-primary" : "btn-outline-primary" ?>" href="index.php">Home</a></li>
 				</div>
 
 				<div class="col-xlg-1">

@@ -20,19 +20,15 @@
 					<li><a class="btn <?php echo $current == "browse.php" ? "btn-primary" : "btn-outline-primary" ?>" href="browse.php">Shopping</a></li>
 				</div>
 
-
 				<div class="col-xlg-2">
 					
 				</div>
-
 				<div class="col-xlg-1">
 					<li><a class="btn <?php echo $current == "cart.php" ? "btn-primary" : "btn-outline-primary" ?>" href="cart.php">Cart</a></li>
 				</div>
-
 				<div class="col-xlg-1">
 					<li><a class="btn <?php echo $current == "forum.php" ? "btn-primary" : "btn-outline-primary" ?>" href="forum.php">Forum</a></li>
 				</div>
-				
 				<div class="col-xlg-1">
 					<li><a class="btn  <?php echo $current == "about.php" ? "btn-primary" : "btn-outline-primary" ?>" href="about.php">About Me</a></li>
 				</div>

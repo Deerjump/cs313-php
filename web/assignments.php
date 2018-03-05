@@ -10,9 +10,21 @@
 		<?php include "header.php" ?>
 	</header>
 	<div class="bodywrapper">
-		<h1>My Assignments</h1>
-		<br>
-		<h4 ><a class="assignment" href="browse.php">Shopping Cart Assignment</a></h4>
+		<div class="container-fluid">
+			<div class="card cart">
+				<div class="card-header">
+					<h4 class="card-title">My Assignments</h2>
+				</div>
+				<div class="card-body">
+					<div class="card-text">
+						<h4><strong>-</strong><a class="assignment" href="browse.php">Shopping Cart Assignment</a></h4>
+					</div>
+					<div class="card-text">
+						<h4><strong>-</strong><a class="assignment" href="forum.php">Forum</a></h4>
+			 		</div>
+			 	</div>
+			 </div>
+		</div>
 	</div>
 </body>
 </html>

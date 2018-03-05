@@ -122,7 +122,7 @@ $_SESSION['cart']['prod6'] += $_GET['prod6'];
 					  	<h4 class="card-title">Option 5</h4>
 					  </div>
 					  <div class="card-body">
-					    <p class="card-text">High Tier workstation for heavy workloads and gaming</p>
+					    <p class="card-text">High tier workstation for heavy workloads and gaming</p>
 					    <ul class="list-group list-group-flush">
     						<li class="list-group-item">Intel i7-8700k 6 Cores</li>
 						    <li class="list-group-item">Nvidia GTX 1080</li>
@@ -142,7 +142,7 @@ $_SESSION['cart']['prod6'] += $_GET['prod6'];
 					  	<h4 class="card-title">Option 6</h4>
 					  </div>
 					  <div class="card-body">
-					    <p class="card-text">Extremely powerful pc for very high rendering workloads</p>
+					    <p class="card-text"><strong>Extremely</strong> powerful pc for very high rendering workloads</p>
 					    <ul class="list-group list-group-flush">
     						<li class="list-group-item">Ryzen Threadripper 1900X</li>
 						    <li class="list-group-item">Nvidia GTX 1080ti</li>

@@ -16,29 +16,28 @@
 	
 	<div class="bodywrapper">
 		<div class="container-fluid">
-			<div class="row">
-				<div class="col-lg-12">
-					<div class="card cart">
-						<div class="card-header">
-							<div class="card-title">
-								Forum Threads
-							</div>
-						</div>
-						<div class="card-body">
-							<div class="card-text">
-								<?php
-									foreach ($db->query('select title, username FROM thread INNER JOIN account ON thread.author_id = account.id') as $row) {
-										$title = $row['title'];
-										$author = $row['username'];
-										echo "$title" . " written by: " . "$author" . "<br>";
-									}
-									
-
-								?>
-							</div>
-						</div>
+			<div class="card cart">
+				<div class="card-header">
+					<div class="card-title">
+						Forum Threads
 					</div>
 				</div>
+				<div class="card-body">
+					<div class="card-text">
+						<?php
+							foreach ($db->query('select title, username FROM thread INNER JOIN account ON thread.author_id = account.id') as $row) {
+								$title = $row['title'];
+								$author = $row['username'];
+								//echo "<strong>$title</strong>" . " written by: " . "$author" . "<br>";
+								echo "<div class='row'>";
+								echo "<div class= 'col-md-6'><strong>$title</strong></div>";
+								echo "<div class= 'col-md-6'>". " written by: $author" . "</div></div>";
+							}
+									
+
+						?>
+					</div>
+				</div>	
 			</div>
 		</div>
 	</div>

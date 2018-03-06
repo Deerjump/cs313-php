@@ -1,6 +1,7 @@
 <?php
 	require('dbconnect.php');
-	//$query = $_GET['query'];
+	
+	$query = $_GET['query'];
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -22,7 +23,7 @@
 					<div class="card-title">
 						Forum Threads <br>
 						<form method="GET">
-							<input type="text" name="query" placeholder="Keyword">
+							<input type="text" name="query" placeholder="Keyword" value="<?php echo $query ?>">
 							<input type="submit" value="Search" /> 
 						</form>
 					</div>
@@ -30,15 +31,18 @@
 				<div class="card-body">
 					<div class="card-text">
 						<?php
-							foreach ($db->query("select title, username FROM thread INNER JOIN account ON thread.author_id = account.id") as $row) {
-								$title = $row['title'];
-								$author = $row['username'];
-								echo "<div class='row'>";
-								echo "<div class= 'col-md-4'><strong>$title</strong></div>";
-								echo "<div class= 'col-md-4'>" . " " .  "</div>";
-								echo "<div class= 'col-md-4'>" .  "written by: <strong>$author</strong>" . "</div></div>";
-							}
-									
+							//"select title, username FROM thread INNER JOIN account ON thread.author_id = account.id"
+							//"select title, username FROM thread INNER JOIN account ON thread.author_id = account.id"
+							
+								foreach ($db->query("SELECT title, username FROM thread INNER JOIN account ON thread.author_id = account.id WHERE title LIKE '%$query%' OR username LIKE '%$query%'")  as $row) {
+									$title = $row['title'];
+									$author = $row['username'];
+									echo "<div class='row'>";
+									echo "<div class= 'col-md-4'><strong>$title</strong></div>";
+									echo "<div class= 'col-md-4'>" . " " .  "</div>";
+									echo "<div class= 'col-md-4'>" .  "written by: <strong>$author</strong>" . "</div></div>";
+								}
+						
 
 						?>
 					</div>

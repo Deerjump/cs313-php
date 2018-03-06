@@ -1,6 +1,6 @@
 <?php
 	require('dbconnect.php');
-	$query = $_GET['query'];
+	//$query = $_GET['query'];
 ?>
 <!DOCTYPE html>
 <html lang="en">

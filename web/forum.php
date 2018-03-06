@@ -1,5 +1,6 @@
 <?php
 	require('dbconnect.php');
+	$query = $_GET['query'];
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -19,19 +20,23 @@
 			<div class="card cart">
 				<div class="card-header">
 					<div class="card-title">
-						Forum Threads
+						Forum Threads <br>
+						<form method="GET">
+							<input type="text" name="query" placeholder="Keyword">
+							<input type="submit" value="Search" /> 
+						</form>
 					</div>
 				</div>
 				<div class="card-body">
 					<div class="card-text">
 						<?php
-							foreach ($db->query('select title, username FROM thread INNER JOIN account ON thread.author_id = account.id') as $row) {
+							foreach ($db->query("select title, username FROM thread INNER JOIN account ON thread.author_id = account.id") as $row) {
 								$title = $row['title'];
 								$author = $row['username'];
-								//echo "<strong>$title</strong>" . " written by: " . "$author" . "<br>";
 								echo "<div class='row'>";
-								echo "<div class= 'col-md-6'><strong>$title</strong></div>";
-								echo "<div class= 'col-md-6'>". " written by: $author" . "</div></div>";
+								echo "<div class= 'col-md-4'><strong>$title</strong></div>";
+								echo "<div class= 'col-md-4'>" . " " .  "</div>";
+								echo "<div class= 'col-md-4'>" .  "written by: <strong>$author</strong>" . "</div></div>";
 							}
 									
 

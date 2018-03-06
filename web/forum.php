@@ -31,19 +31,20 @@
 				<div class="card-body">
 					<div class="card-text">
 						<?php
-							//"select title, username FROM thread INNER JOIN account ON thread.author_id = account.id"
-							//"select title, username FROM thread INNER JOIN account ON thread.author_id = account.id"
 							
-								foreach ($db->query("SELECT title, username FROM thread INNER JOIN account ON thread.author_id = account.id WHERE title LIKE '%$query%' OR username LIKE '%$query%'")  as $row) {
+								foreach ($db->query("SELECT title, username FROM thread INNER JOIN account ON thread.author_id = account.id WHERE LOWER(title) LIKE LOWER('%$query%') OR LOWER(username) LIKE LOWER('%$query%')")  as $row) {
 									$title = $row['title'];
 									$author = $row['username'];
+									
 									echo "<div class='row'>";
 									echo "<div class= 'col-md-4'><strong>$title</strong></div>";
 									echo "<div class= 'col-md-4'>" . " " .  "</div>";
 									echo "<div class= 'col-md-4'>" .  "written by: <strong>$author</strong>" . "</div></div>";
-								}
-						
 
+								}
+								if(count($row)==0){
+									echo "<div class='row'><div class='col-md-12'> <h2>There are no results for $query!</h2><h4><u><a href='forum.php'>Return</a></u></h4></div></div>";
+								}
 						?>
 					</div>
 				</div>	

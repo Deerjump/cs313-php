@@ -21,9 +21,6 @@
 			<div class="card cart">
 				<div class="card-header">
 					<div class="card-title">
-						<a href="forum.php" style="color: #5cb85c;">Back to Forum Index</a>
-					</div>
-					<div class="card-title">
 						<?php
 							foreach($db->query("SELECT * FROM thread INNER JOIN account ON thread.author_id = account.account_id WHERE thread_id=$id") as $row)
 							{
@@ -35,7 +32,7 @@
 								echo "<h6>by: <strong>$author</strong>. written on: <strong>$date</strong></h6>";
 							}
 						?> 
-						<br>
+						<a href="forum.php" style="color: #5cb85c;">Back to Forum Index</a>
 					</div>
 				</div>
 				<div class="card-body">

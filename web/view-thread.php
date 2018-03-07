@@ -27,10 +27,10 @@
 							{
 								$title = $row['title'];
 								$author = $row['username'];
-								$date = $row['date'];
+								$date = $row['date_posted'];
 								$content = $row['content'];
 								echo "<h2>$title Test</h2>";
-								echo "<h6>by: $author. written on $date</h6>";
+								echo "<h6>by: <strong>$author</strong>. written on: <strong>$date</strong></h6>";
 							}
 						?> 
 						<br>

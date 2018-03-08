@@ -36,6 +36,10 @@ a:hover{
 	font-weight: bold;
 }
 
+.btn-header{
+	margin-left: 5px;
+}
+
 .current{
 	font-weight: bold;
 	color: #000000;

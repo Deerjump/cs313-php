@@ -21,11 +21,19 @@
 			<div class="card cart">
 				<div class="card-header">
 					<div class="card-title">
-						Forum Threads <br>
-						<form method="GET">
-							<input type="text" name="query" placeholder="Keyword" value="<?php echo $query ?>">
-							<input type="submit" value="Search" /> 
-						</form>
+						<div class="row">
+							<div class="col-md-10">
+								Forum Threads <br>
+								<form method="GET">
+									<input type="text" name="query" placeholder="Keyword" value="<?php echo $query ?>">
+									<input type="submit" value="Search" /> 
+								</form>
+							</div>
+							<div class="col-md-2">
+
+								<a class="btn btn-success" href="new-thread.php">Create New Thread</a>
+							</div>
+						</div>
 					</div>
 				</div>
 				<div class="card-body">

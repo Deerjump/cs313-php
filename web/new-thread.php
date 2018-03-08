@@ -1,7 +1,7 @@
 <?php
 	require('dbconnect.php');
 	
-	$id = (int)$_GET['id'];
+	$query = $_GET['query'];
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -21,24 +21,14 @@
 			<div class="card cart">
 				<div class="card-header">
 					<div class="card-title">
-						<?php
-							foreach($db->query("SELECT * FROM thread INNER JOIN account ON thread.author_id = account.account_id WHERE thread_id=$id") as $row)
-							{
-								$title = $row['title'];
-								$author = $row['username'];
-								$date = $row['date_posted'];
-								$content = $row['content'];
-								echo "<h2>$title</h2>";
-								echo "<h6>by: <strong>$author</strong>. written on: <strong>$date</strong></h6>";
-							}
-						?> 
-						<a href="forum.php" style="color: #5cb85c;">Back to Forum Index</a>
+						<input type="text" name="title" placeholder="Title Here">
 					</div>
 				</div>
 				<div class="card-body">
 					<div class="card-text">
 						<?php
-							echo "<p>$content</p>";
+							
+							
 						?>
 					</div>
 				</div>	

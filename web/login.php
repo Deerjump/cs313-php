@@ -27,7 +27,7 @@
 						</form>
 						<form action="create-account.php">
 							<label for="create-account">New?</label>
-							<input class="btn btn-success" type="submit" value="Create an account" />
+							<input class="btn btn-success" type="submit" value="Create an account"/>
 						</form>
 					</div>
 				</div>

@@ -16,18 +16,20 @@
 			<div class="card cart">
 				<div class="card-header">
 					<div class="card-title">
-						<h2>Create your account</h2>
-						<form action="db-login.php" method="POST">
-							<label for="new_username">Username</label>
+						<h2 class="index-row">Create your account</h2>
+						<form action="sign-up.php" method="POST">
+
+							<label for="new_display" class="space-left">Display Name</label>
+							<input type="text" name="new_display" placeholder="Display Name">
+
+							<label for="new_username" class="space-left">Username</label>
 							<input type="text" name="new_username" placeholder="Username">
 							
-							<label for="new_password">Password</label>
+							<label for="new_password" class="space-left">Password</label>
 							<input type="password" name="new_password" placeholder="Password">
-
-							<label for="new_display">Display Name</label>
-							<input type="text" name="new_display" placeholder="Display Name">
 							
-							<input class="btn btn-success" type="submit" value="Login">
+							<input class="btn btn-success" type="submit" value="Create Account">
+						
 						</form>
 					</div>
 				</div>

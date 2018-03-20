@@ -30,7 +30,7 @@
 								</form>
 							</div>
 							<div class="col-md-2">
-								<a class="btn btn-success" href="new-thread.php">Create New Thread</a>
+								<a class="btn btn-success" href="<?php echo $logged_in ? "new-thread.php" : "login.php" ?>">Create New Thread</a>
 							</div>
 						</div>
 					</div>

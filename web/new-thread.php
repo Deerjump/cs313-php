@@ -1,8 +1,3 @@
-<?php
-	require('dbconnect.php');
-	
-	$query = $_GET['query'];
-?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -19,19 +14,25 @@
 	<div class="bodywrapper">
 		<div class="container-fluid">
 			<div class="card cart">
-				<div class="card-header">
-					<div class="card-title">
-						<input type="text" name="title" placeholder="Title Here">
+				<form action="make-thread.php" method="POST">
+					<div class="card-header">
+						<div class="card-title">
+							<div class="row">
+								<div class="col-lg-10">
+									<input type="text" name="title" placeholder="Title Here">
+								</div>
+								<div class="col-md-2">
+									<button type="submit" class="btn btn-success">Submit Thread</button>
+								</div>
+							</div>
+						</div>
 					</div>
-				</div>
-				<div class="card-body">
-					<div class="card-text">
-						<?php
-							
-							
-						?>
-					</div>
-				</div>	
+						<div class="card-body">
+							<div class="card-text">
+								<textarea name="content" rows="10" id="fill" placeholder="Content Here"></textarea>
+							</div>
+						</div>
+				</form>
 			</div>
 		</div>
 	</div>

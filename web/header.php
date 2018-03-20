@@ -55,20 +55,8 @@
 					<li><a class="btn btn-header <?php echo $current == "forum.php" ? "btn-primary" : "btn-outline-primary" ?>" href="forum.php">Forum</a></li>
 				</div>
 
-				<div class="col-xlg-1">
+				<div class="col-xlg-5" style="width:60%">
 					<li><a class="btn btn-header <?php echo $current == "about.php" ? "btn-primary" : "btn-outline-primary" ?>" href="about.php">About Me</a></li>
-				</div>
-
-				<div class="col-xlg-1">
-					<li> </li>
-				</div>
-
-				<div class="col-xlg-1">
-					<li> </li>
-				</div>
-
-				<div class="col-xlg-1">
-					<li> </li>
 				</div>
 
 				<div class="col-xlg-1">
@@ -81,7 +69,7 @@
 					</li>
 				</div>
 
-				<div class="col-xlg-2">
+				<div class="col-xlg-1">
 					<li><a class="btn <?php echo $logged_in ? "btn-danger" : "btn-success"  ?>" href="<?php echo $logged_in ? "sign-out.php" : "login.php" ?>"><?php echo $logged_in ? "Sign Out" : "Login" ?></a></li>	
 				</div>
 			</div>

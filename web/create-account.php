@@ -28,7 +28,7 @@
 							<label for="new_password" class="space-left">Password</label>
 							<input type="password" name="new_password" placeholder="Password">
 							
-							<input class="btn btn-success" type="submit" value="Create Account">
+							<input class="btn btn-success" type="submit" value="Create Accoun"t>
 						
 						</form>
 					</div>

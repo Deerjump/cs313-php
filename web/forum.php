@@ -1,7 +1,7 @@
 <?php
 	require('dbconnect.php');
 	
-	$query = $_GET['query'];
+	$search = $_GET['search'];
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -25,7 +25,7 @@
 							<div class="col-md-10">	
 								Forum Threads <br>
 								<form method="GET">
-									<input type="text" name="query" placeholder="Keyword" value="<?php echo $query ?>">
+									<input type="text" name="search" placeholder="Keyword" value="<?php echo $search ?>">
 									<input type="submit" value="Search" /> 
 								</form>
 							</div>
@@ -39,7 +39,7 @@
 					<div class="card-text">
 						<?php
 							
-								foreach ($db->query("SELECT * FROM thread INNER JOIN account ON thread.author_id = account.account_id WHERE LOWER(title) LIKE LOWER('%$query%') OR LOWER(username) LIKE LOWER('%$query%') ORDER BY thread_id")  as $row) {
+								foreach ($db->query("SELECT * FROM thread INNER JOIN account ON thread.author_id = account.account_id WHERE LOWER(title) LIKE LOWER('%$search%') OR LOWER(username) LIKE LOWER('%$search%') ORDER BY thread_id")  as $row) {
 									$title = $row['title'];
 									$author = $row['username'];
 									$id = $row['thread_id'];
@@ -50,7 +50,7 @@
 
 								}
 								if(count($row)==0){
-									echo "<div class='row'><div class='col-md-12'> <h2>There are no results for $query!</h2><h4><u><a href='forum.php'>Return</a></u></h4></div></div>";
+									echo "<div class='row'><div class='col-md-12'> <h2>There are no results for $search!</h2><h4><u><a href='forum.php'>Return</a></u></h4></div></div>";
 								}
 						?>
 					</div>

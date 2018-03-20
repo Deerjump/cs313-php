@@ -1,3 +1,6 @@
+<?php
+	require('db-login.php');
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -17,13 +20,17 @@
 				<div class="card-header">
 					<div class="card-title">
 						<h2>Login to your account</h2>
-						<form action="db-login.php" method="POST">
+						<form action="login.php" method="POST">
 							<label for="username">Username</label>
 							<input type="text" name="username" placeholder="Username">
 							<label for="password">Password</label>
 							<input type="password" name="password" placeholder="Password">
 							<input class="btn btn-primary" type="submit" value="Login">
-							
+							<?php
+								if ($badLogin) {
+									echo "<h2 class='login-fail'>Incorrect username or password!</h2><br>";
+								}
+							?>
 						</form>
 						<form action="create-account.php">
 							<label for="create-account">New?</label>

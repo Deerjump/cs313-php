@@ -1,19 +1,37 @@
-<h1 class="header-title">CS 313</h1>
-
 <?php 
-	session_start(); 
+	session_start();
+	
+	if(isset($_SESSION['user_id']))
+	{
+		require('dbconnect.php');
+
+		$user_id = $_SESSION['user_id'];
+
+		$query = 'SELECT username FROM account WHERE account_id=:user_id';
+
+		$stmt = $db->prepare($query);
+		$stmt->bindValue(':user_id', $user_id);
+		$stmt->execute();
+
+		$row = $stmt->fetch();
+		$username = $row['username'];
+	}
+	 
 
 	$current = basename($_SERVER['PHP_SELF']); 
-	$logged_in = true;
-
-	if(isset($_SESSION['username']) && !empty($_SESSION['username'])){
+	if(isset($_SESSION['user_id']))
+	{
 		$logged_in = true;
 	}
-	else{
+	else
+	{
 		$logged_in = false;
 	}
 ?>
 
+
+
+<h1 class="header-title">CS 313</h1>
 <nav>
 	<ul>
 		<div class="container-fluid">
@@ -54,7 +72,13 @@
 				</div>
 
 				<div class="col-xlg-1">
-					<li> </li>
+					<li> 
+						<?php 
+							if (isset($_SESSION['user_id'])) {
+								echo "Welcome," . " $username" . "!";
+							}
+						?>
+					</li>
 				</div>
 
 				<div class="col-xlg-2">

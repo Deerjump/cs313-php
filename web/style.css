@@ -97,3 +97,9 @@ iframe{
 .small-space-left{
 	margin-left: 40px;
 }
+
+.login-fail{
+	color: red;
+	text-decoration: underline;
+	font-weight: bold;
+}

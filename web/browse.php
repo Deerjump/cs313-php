@@ -158,5 +158,8 @@ $_SESSION['cart']['prod6'] += $_GET['prod6'];
 			</div>
 		</div>
 	</div>
+	<footer>
+		<?php include "footer.php" ?>
+	</footer>
 </body>
 </html>

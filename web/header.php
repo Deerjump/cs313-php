@@ -47,9 +47,9 @@
 							Assignments
 						</a>
 						<div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-							<a class="dropdown-item text-blue" href="#">Shopping</a>
-							<a class="dropdown-item text-blue" href="#">Cart</a>
-							<a class="dropdown-item text-blue" href="#">Forum</a>
+							<a class="dropdown-item text-blue" href="browse.php">Shopping</a>
+							<a class="dropdown-item text-blue" href="cart.php">Cart</a>
+							<a class="dropdown-item text-blue" href="forum.php">Forum</a>
 						</div>
 					</li>
 				</ul>

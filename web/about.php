@@ -12,6 +12,9 @@
 	<div class="bodywrapper">
 		<h1>About Us!</h1>
 	</div>
+	<footer>
+		<?php include "footer.php" ?>
+	</footer>
 </body>
 </html>
 

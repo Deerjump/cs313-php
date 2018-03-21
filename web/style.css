@@ -35,12 +35,6 @@ a{
 
 a:hover{
 	text-decoration: none;
-	font-weight: bold;
-}
-
-.current{
-	font-weight: bold;
-	color: #000000;
 }
 
 iframe{
@@ -107,4 +101,12 @@ iframe{
 #fill{
 	width: 100%;
 	height: 100%;
+}
+
+.navbar.navbar-expand-lg.navbar-light.bg-light>div>ul>li>a{
+	color: #007bFF;
+}
+
+.text-blue{
+	color: #007BFF;
 }

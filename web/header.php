@@ -29,50 +29,47 @@
 	}
 ?>
 
-
-
-<h1 class="header-title">CS 313</h1>
-<nav>
-	<ul>
-		<div class="container-fluid">
-			<div class="row">
-				<div class="col-xlg-1">
-					<li><a class="btn btn-header <?php echo $current == "index.php" ? "btn-primary" : "btn-outline-primary" ?>" href="index.php">Home</a></li>
-				</div>
-
-				<div class="col-xlg-1">
-					<li><a class="btn btn-header <?php echo $current == "assignments.php" ? "btn-primary" : "btn-outline-primary" ?>" href="assignments.php">Assignments</a></li>
-				</div>
-		
-				<div class="col-xlg-1">
-					<li><a class="btn btn-header <?php echo $current == "browse.php" ? "btn-primary" : "btn-outline-primary" ?>" href="browse.php">Shopping</a></li>
-				</div>
-
-				<div class="col-xlg-1">
-					<li><a class="btn btn-header <?php echo $current == "cart.php" ? "btn-primary" : "btn-outline-primary" ?>" href="cart.php">Cart</a></li>
-				</div>
-				<div class="col-xlg-1">
-					<li><a class="btn btn-header <?php echo $current == "forum.php" ? "btn-primary" : "btn-outline-primary" ?>" href="forum.php">Forum</a></li>
-				</div>
-
-				<div class="col-xlg-5" style="width:60%">
-					<li><a class="btn btn-header <?php echo $current == "about.php" ? "btn-primary" : "btn-outline-primary" ?>" href="about.php">About Me</a></li>
-				</div>
-
-				<div class="col-xlg-1">
-					<li> 
-						<?php 
-							if (isset($_SESSION['user_id'])) {
-								echo "Welcome," . " $username" . "!";
-							}
-						?>
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+  			<a class="navbar-brand" href="#"><h1 class="header-title">CS 313</h1></a>
+			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+			<div class="collapse navbar-collapse" id="navbarNavDropdown">
+				<ul class="navbar-nav">
+					<li class="nav-item active">
+						<a class="btn btn-outline-primary nav-link" href="index.php">Home</a>
 					</li>
-				</div>
-
-				<div class="col-xlg-1">
-					<li><a class="btn <?php echo $logged_in ? "btn-danger" : "btn-success"  ?>" href="<?php echo $logged_in ? "sign-out.php" : "login.php" ?>"><?php echo $logged_in ? "Sign Out" : "Login" ?></a></li>	
-				</div>
-			</div>
-		</div>
-	</ul>
+					<li class="nav-item">			
+						<a class="btn btn-outline-primary nav-link" href="about.php">About Me</a>
+					</li>
+					<li class="nav-item dropdown">
+						<a class="nav-link dropdown-toggle btn btn-outline-primary" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+							Assignments
+						</a>
+						<div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+							<a class="dropdown-item text-blue" href="#">Shopping</a>
+							<a class="dropdown-item text-blue" href="#">Cart</a>
+							<a class="dropdown-item text-blue" href="#">Forum</a>
+						</div>
+					</li>
+				</ul>
+				<ul class="navbar-nav ml-auto">
+					<li class="nav-item"> 
+						<span class="navbar-text">
+							<?php 
+								if (isset($_SESSION['user_id'])) {
+								echo "Welcome," . " $username" . "!";
+								}
+							?>
+						</span>
+					</li>
+					<li class="nav-item">
+				<a style="color: white;"  class="btn  <?php echo $logged_in ? "btn-danger" : "btn-success"  ?>" href="<?php echo $logged_in ? "sign-out.php" : "login.php" ?>">
+					<?php 
+						echo $logged_in ? "Sign Out" : "Login"
+					?>
+				</a>
+			</li>	
+		</ul>
+	</div>
 </nav>

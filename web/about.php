@@ -11,6 +11,7 @@
 	</header>
 	<div class="bodywrapper">
 		<h1>About Us!</h1>
+		<h2>I mean me....</h2>
 	</div>
 	<footer>
 		<?php include "footer.php" ?>

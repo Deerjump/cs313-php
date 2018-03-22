@@ -22,11 +22,11 @@
 				<div class="card-header">
 					<div class="card-title">
 						<?php
-							foreach($db->query("SELECT * FROM thread INNER JOIN account ON thread.author_id = account.account_id WHERE thread_id=$id") as $row)
+							foreach($db->query("SELECT *, to_char(date_posted, 'Month DD, YYYY at HH12:MI' ) FROM thread INNER JOIN account ON thread.author_id = account.account_id WHERE thread_id=$id") as $row)
 							{
 								$title = $row['title'];
 								$author = $row['username'];
-								$date = $row['date_posted'];
+								$date = $row['to_char'];
 								$content = $row['content'];
 								echo "<h2>$title</h2>";
 								echo "<h6>by: <strong>$author</strong>. written on: <strong>$date</strong></h6>";

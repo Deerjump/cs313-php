@@ -51,8 +51,8 @@
 							echo "<li class='list-group-item fill-width'><span class='comment-title fill-width'>By: <strong> $author </strong> at <strong>$comment_date</strong></span> <span class='comment-body'> $content <span></li>";
 							}
 						?>				    
-						<a onclick="showForm()" ><strong class="text-blue"> Comment </strong></a>
-							<form class="comment-form"  action="new-comment.php" method="POST">
+						<a onclick="showForm()"><strong class="text-blue"> Comment </strong></a>
+							<form class="comment-form" id="comment-form"  action="new-comment.php" method="POST">
 								<textarea class="fill-width" name="comment" cols="30" rows="10"></textarea>
 								<br>
 								<input type="submit">

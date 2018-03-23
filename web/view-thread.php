@@ -32,15 +32,32 @@
 								echo "<h6>by: <strong>$author</strong>. written on: <strong>$date</strong></h6>";
 							}
 						?> 
-						<a href="forum.php" style="color: #5cb85c;">Back to Forum Index</a>
+						<a href="forum.php" style="color: #5cb85c;"><strong>Back to Forum Index</strong></a>
 					</div>
 				</div>
 				<div class="card-body">
 					<div class="card-text">
 						<?php
 							echo "<p>$content</p>";
+
 						?>
 					</div>
+					<ul class="list-group list-group-flush">
+						<?php 
+							foreach ($db->query("SELECT *, to_char(date_commented, 'Month DD, YYYY at HH12:MI' ) FROM comment INNER JOIN account ON comment.author_id = account.account_id WHERE thread_id=$id") as $row1) {
+									$author = $row1['username'];
+									$comment_date = $row1['to_char'];
+									$content = $row1['comment'];				
+							echo "<li class='list-group-item fill-width'><span class='comment-title fill-width'>By: <strong> $author </strong> at <strong>$comment_date</strong></span> <span class='comment-body'> $content <span></li>";
+							}
+						?>				    
+						<a onclick="showForm()" ><strong class="text-blue"> Comment </strong></a>
+							<form class="comment-form"  action="new-comment.php" method="POST">
+								<textarea class="fill-width" name="comment" cols="30" rows="10"></textarea>
+								<br>
+								<input type="submit">
+							</form>
+				    </ul>
 				</div>	
 			</div>
 		</div>

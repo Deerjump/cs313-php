@@ -25,3 +25,4 @@ catch (PDOException $ex) {
  die();
 }
 
+?>

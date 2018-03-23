@@ -84,6 +84,20 @@ iframe{
 	border-bottom-style: ridge;
 }
 
+.comment-title{
+	border-bottom-width: 2px;
+	border-bottom-color: black;
+	border-bottom-style: solid;
+}
+
+.comment-body{
+	padding:5px;	
+	display: table;
+	width:100%;
+	background-color: #EEEEEE;
+	height:100%;
+}
+
 .space-left{
 	margin-left: 80px;
 }
@@ -103,10 +117,23 @@ iframe{
 	height: 100%;
 }
 
+.fill-width{
+	display: table;
+	width:100%;
+}
+
 .navbar.navbar-expand-lg.navbar-light.bg-light>div>ul>li>a{
 	color: #007bFF;
 }
 
 .text-blue{
 	color: #007BFF;
+}
+
+.bold-text{
+	font-weight: bold;
+}
+
+.comment-form{
+	visibility: hidden;
 }

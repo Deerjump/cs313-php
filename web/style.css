@@ -134,6 +134,17 @@ iframe{
 	font-weight: bold;
 }
 
+#text-red{
+	color: #dc3545;
+}
+
+#text-red:hover{
+	color: white;
+}
 .comment-form{
-	visibility: hidden;
+	display: none;
+}
+
+.borderless{
+	border: none;
 }

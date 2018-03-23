@@ -1,6 +1,8 @@
 <?php
 	session_start();
-	 require(dbconnect.php);
+	require(dbconnect.php);
 
+
+	header("Location: ");
 ?>
 

@@ -8,6 +8,7 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Forum</title>
+	<script src="javascript.js"></script>
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 	<link rel="stylesheet" type="text/css" href="style.css">
 </head>
@@ -51,11 +52,14 @@
 							echo "<li class='list-group-item fill-width'><span class='comment-title fill-width'>By: <strong> $author </strong> at <strong>$comment_date</strong></span> <span class='comment-body'> $content <span></li>";
 							}
 						?>				    
-						<a onclick="showForm()"><strong class="text-blue"> Comment </strong></a>
+						<strong> <button class="btn btn-outline-primary borderless" onclick="showForm()"> <strong> Comment </strong> </button> </strong>
+							<br>
 							<form class="comment-form" id="comment-form"  action="new-comment.php" method="POST">
-								<textarea class="fill-width" name="comment" cols="30" rows="10"></textarea>
+								<textarea class="fill-width" rows="10" name="comment"></textarea>
 								<br>
 								<input type="submit">
+								<input type="text" value="<?php echo '$id'?>" style="display:none;">
+								<a onclick="hideForm()" id="text-red" class="btn btn-outline-danger borderless"><strong>Cancel</strong></a>
 							</form>
 				    </ul>
 				</div>	

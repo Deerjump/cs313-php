@@ -1,3 +1,7 @@
 function showForm(){
-	document.getElemenetById("comment-form").style.visibility = "visible";
+	document.getElementById("comment-form").style.display = "initial";
+}
+
+function hideForm(){
+	document.getElementById("comment-form").style.display = "none";
 }

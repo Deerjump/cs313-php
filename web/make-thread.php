@@ -15,4 +15,4 @@
 	header("Location: forum.php");
 	die();
 
- ?>
+ ?> 

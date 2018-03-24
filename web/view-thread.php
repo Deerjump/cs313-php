@@ -52,14 +52,14 @@
 							echo "<li class='list-group-item fill-width'><span class='comment-title fill-width'>By: <strong> $author </strong> at <strong>$comment_date</strong></span> <span class='comment-body'> $content <span></li>";
 							}
 						?>				    
-						<strong> <button class="btn btn-outline-primary borderless" onclick="showForm()"> <strong> Comment </strong> </button> </strong>
+						<strong> <a class="btn btn-outline-primary borderless" href="<?php echo $logged_in ? "#" : "login.php" ?>" onclick="<?php echo $logged_in ? "showForm()" : " " ?>"> <strong id="new-comment"> Comment </strong> </a> </strong>
 							<br>
 							<form class="comment-form" id="comment-form"  action="new-comment.php" method="POST">
 								<textarea class="fill-width" rows="10" name="comment"></textarea>
 								<br>
 								<input type="submit">
-								<input type="text" value="<?php echo '$id'?>" style="display:none;">
-								<a onclick="hideForm()" id="text-red" class="btn btn-outline-danger borderless"><strong>Cancel</strong></a>
+								<input type="text" name="thread_id" value="<?php echo "$id"?>" style="display:none;">
+								<a onclick="hideForm()" class="btn btn-outline-danger borderless hover-white"><strong id="text-red">Cancel</strong></a>
 							</form>
 				    </ul>
 				</div>	

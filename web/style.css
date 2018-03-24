@@ -141,6 +141,15 @@ iframe{
 #text-red:hover{
 	color: white;
 }
+
+#new-comment{
+	color: #007BFF;
+}
+
+#new-comment:hover{
+	color: white;
+}
+
 .comment-form{
 	display: none;
 }

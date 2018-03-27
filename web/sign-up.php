@@ -6,7 +6,7 @@
 
 
 	$username = $_POST['new_username'];
-	$display_name = $_POST['new_display'];
+	$display_name = htmlspecialchars($_POST['new_display']);
 	$password = $_POST['new_password'];
 	
 	$hash = password_hash($password, PASSWORD_DEFAULT);

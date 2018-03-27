@@ -4,7 +4,7 @@
 
 	$user_id = $_SESSION['user_id'];
 	$thread_id = $_POST['thread_id'];
-	$comment = $_POST['comment'];
+	$comment = htmlspecialchars($_POST['comment']);
 
 	$stmt = $db->prepare("INSERT INTO comment VALUES(DEFAULT, :author_id, :thread_id, :comment, CURRENT_TIMESTAMP)");
 	$stmt->bindValue(':author_id', $user_id);
